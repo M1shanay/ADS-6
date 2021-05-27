@@ -10,7 +10,7 @@ class BST {
   int count;
   Node* left;
   Node* right;
-};
+  };
 BST(): root(nullptr) {}
 ~BST() {}
 void add(T value) {
@@ -43,7 +43,7 @@ Node* addNode(Node* root, T value) {
 int depthTree(Node* root) {
 if (root == nullptr)
      return 0;
-if (root->left == nullptr && root->right == nullptr)
+if ((root->left == nullptr) && (root->right == nullptr))
      return 0;
             int lh = depthTree(root->left);
             int rh = depthTree(root->right);
